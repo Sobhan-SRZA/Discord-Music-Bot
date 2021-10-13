@@ -1,33 +1,33 @@
 ## آدرس های من در فضای مجازی👇🏼🙃
 
 
-آدرس توییچ
 
-https://www.twitch.tv/sobhan_srza
+آدرس توییچ
+[Twich](https://www.twitch.tv/sobhan_srza)
  
 آدرس کانال تلگرام من                                                      
-https://t.me/SobhanSRZA
+[Telegram](https://t.me/SobhanSRZA)
 
 آدرس اینستگرام                                    
-https://www.instagram.com/srza._.gamer
+[Instegram](https://www.instagram.com/srza._.gamer)
  
 آدرس آپارات                                             
-https://www.aparat.com/Sobhan.SRZA
+[Aparat](https://www.aparat.com/Sobhan.SRZA)
 
 آدرس یوتوب                                                                  
-https://b2n.ir/srza.-.gamer
+[YouTube](https://b2n.ir/srza.-.gamer)
 
  آدرس دیسکورد                                                    
- https://discord.gg/YZyy4Th6NN
+[Discord](https://discord.gg/YZyy4Th6NNz)
 
 ## اگه خیلی به موضوعات فیلم و کارتون علاقه دارید پس چنل دومم رو فراموش نکنید👇🏼❤🌹
 
 آدرس یوتوب                                                                   
-https://b2n.ir/srza._.action
+[YouTube](https://b2n.ir/srza._.action)
 
 آدرس دیسکورد
 
-https://discord.gg/pcYRw54xEP
+[Discord](https://discord.gg/pcYRw54xEP)
 
 ## آموزش نصب و ران کردن بات
 
@@ -73,27 +73,27 @@ PREFIX="Youre-bot-prefix"
 
 Twitch address
 
-https://www.twitch.tv/sobhan_srza
+[Twich](https://www.twitch.tv/sobhan_srza)
  
 My Telegram Channel Address
 
-https://t.me/SobhanSRZA
+[Telegram](https://t.me/SobhanSRZA)
 
 Instagram address
 
-https://www.instagram.com/srza._.gamer
+[Instegram](https://www.instagram.com/srza._.gamer)
  
 Address of the device
 
-https://www.aparat.com/Sobhan.SRZA
+[Aparat](https://www.aparat.com/Sobhan.SRZA)
 
 YouTube address
 
-https://b2n.ir/srza.-.gamer
+[YouTube](https://b2n.ir/srza.-.gamer)
 
  Discord address
  
- https://discord.gg/YZyy4Th6NN
+[Discord](https://discord.gg/YZyy4Th6NNz)
 
 
 
@@ -101,11 +101,11 @@ https://b2n.ir/srza.-.gamer
 
 YouTube address
 
-https://b2n.ir/srza._.action
+[YouTube](https://b2n.ir/srza._.action)
 
 Discord address
 
-https://discord.gg/pcYRw54xEP
+[Discord](https://discord.gg/pcYRw54xEP)
 
 
 
