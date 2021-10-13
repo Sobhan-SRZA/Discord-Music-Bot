@@ -19,6 +19,7 @@ module.exports = {
         let embed = new MessageEmbed()
         .setAuthor("Commands of "+client.user.username, "https://cdn.discordapp.com/attachments/865859167557255178/897552744402026556/undefined_-_Imgur.gif")
         .setColor("RANDOME")
+        .setThumbnail(message.client.user.displayAvatarURL({ format: "png" }))
         .setDescription(allcmds)
         .setFooter(`To get info of each command you can do ${client.config.prefix}help | Create by Sobhan.SRZA#2153`)
 
