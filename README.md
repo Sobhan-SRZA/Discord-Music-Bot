@@ -62,3 +62,70 @@ PREFIX="Youre-bot-prefix"
 بات شما روشن شد و آماده کار است
 :D
 ❤
+
+## Language EN
+
+## My addresses in cyberspace 👇🏼🙃📡
+
+
+Twitch address
+
+https://www.twitch.tv/sobhan_srza
+ 
+My Telegram Channel Address
+https://t.me/SobhanSRZA
+
+Instagram address
+https://www.instagram.com/srza._.gamer
+ 
+Address of the device
+https://www.aparat.com/Sobhan.SRZA
+
+YouTube address
+https://b2n.ir/srza.-.gamer
+
+ Discord address
+ https://discord.gg/YZyy4Th6NN
+
+## If you are very interested in movies and cartoons, then do not forget my second channel 👇🏼❤🌹📺
+
+YouTube address
+https://b2n.ir/srza._.action
+
+Discord address
+
+https://discord.gg/pcYRw54xEP
+
+## How to install and run the bot🤖
+
+To run the bot, you need to watch the instructional video of this source, which I uploaded to my YouTube
+But you can still learn here
+
+## Set the bot prefix and edit the bot token👻👾
+
+To add a prefix and a token to the source, you need to go to the folder
+`.env`
+Then, according to the following code, edit the prefix and the token bot, respectively
+
+`` `js
+
+TOKEN = "Youre-bot-token"
+PREFIX = "Youre-bot-prefix"
+`` `
+
+in part
+`TOKEN`
+Add your baton token and. in part
+`PREFIX`
+Edit Button Perfix
+
+
+## Run the bot👽
+
+To run, just enter the terminal and enter the following code and enter
+
+`npm i`
+
+Your bot is on and ready to go
+: D
+❤
