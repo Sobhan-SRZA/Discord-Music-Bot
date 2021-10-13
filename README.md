@@ -68,7 +68,7 @@ My Telegram Channel Address[Telegram](https://t.me/SobhanSRZA)
 
 Instagram address[Instegram](https://www.instagram.com/srza._.gamer)
  
-Address of the device[Aparat](https://www.aparat.com/Sobhan.SRZA)
+Address of the Aparat[Aparat](https://www.aparat.com/Sobhan.SRZA)
 
 YouTube address[YouTube](https://b2n.ir/srza.-.gamer)
 
