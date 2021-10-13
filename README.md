@@ -2,32 +2,23 @@
 
 
 
-آدرس توییچ
-[Twich](https://www.twitch.tv/sobhan_srza)
+آدرس توییچ[Twich](https://www.twitch.tv/sobhan_srza)
  
-آدرس کانال تلگرام من                                                      
-[Telegram](https://t.me/SobhanSRZA)
+آدرس کانال تلگرام من[Telegram](https://t.me/SobhanSRZA)
 
-آدرس اینستگرام                                    
-[Instegram](https://www.instagram.com/srza._.gamer)
+آدرس اینستگرام[Instegram](https://www.instagram.com/srza._.gamer)
  
-آدرس آپارات                                             
-[Aparat](https://www.aparat.com/Sobhan.SRZA)
+آدرس آپارات[Aparat](https://www.aparat.com/Sobhan.SRZA)
 
-آدرس یوتوب                                                                  
-[YouTube](https://b2n.ir/srza.-.gamer)
+آدرس یوتوب[YouTube](https://b2n.ir/srza.-.gamer)
 
- آدرس دیسکورد                                                    
-[Discord](https://discord.gg/YZyy4Th6NNz)
+آدرس دیسکورد[Discord](https://discord.gg/YZyy4Th6NNz)
 
 ## اگه خیلی به موضوعات فیلم و کارتون علاقه دارید پس چنل دومم رو فراموش نکنید👇🏼❤🌹
 
-آدرس یوتوب                                                                   
-[YouTube](https://b2n.ir/srza._.action)
+آدرس یوتوب[YouTube](https://b2n.ir/srza._.action)
 
-آدرس دیسکورد
-
-[Discord](https://discord.gg/pcYRw54xEP)
+آدرس دیسکورد[Discord](https://discord.gg/pcYRw54xEP)
 
 ## آموزش نصب و ران کردن بات
 
@@ -71,41 +62,25 @@ PREFIX="Youre-bot-prefix"
 ## My addresses in cyberspace 👇🏼🙃📡
 
 
-Twitch address
-
-[Twich](https://www.twitch.tv/sobhan_srza)
+Twitch address[Twich](https://www.twitch.tv/sobhan_srza)
  
-My Telegram Channel Address
+My Telegram Channel Address[Telegram](https://t.me/SobhanSRZA)
 
-[Telegram](https://t.me/SobhanSRZA)
-
-Instagram address
-
-[Instegram](https://www.instagram.com/srza._.gamer)
+Instagram address[Instegram](https://www.instagram.com/srza._.gamer)
  
-Address of the device
+Address of the device[Aparat](https://www.aparat.com/Sobhan.SRZA)
 
-[Aparat](https://www.aparat.com/Sobhan.SRZA)
+YouTube address[YouTube](https://b2n.ir/srza.-.gamer)
 
-YouTube address
-
-[YouTube](https://b2n.ir/srza.-.gamer)
-
- Discord address
- 
-[Discord](https://discord.gg/YZyy4Th6NNz)
+ Discord address[Discord](https://discord.gg/YZyy4Th6NNz)
 
 
 
 ## If you are very interested in movies and cartoons, then do not forget my second channel 👇🏼❤🌹📺
 
-YouTube address
+YouTube address[YouTube](https://b2n.ir/srza._.action)
 
-[YouTube](https://b2n.ir/srza._.action)
-
-Discord address
-
-[Discord](https://discord.gg/pcYRw54xEP)
+Discord address[Discord](https://discord.gg/pcYRw54xEP)
 
 
 
