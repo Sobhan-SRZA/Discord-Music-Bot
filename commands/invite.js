@@ -11,11 +11,11 @@ module.exports = {
   run: async function (client, message, args) {
     
     //set the permissions id here (https://discordapi.com/permissions.html)
-    var permissions = 37080128;
+    var permissions = 412353895745;
     
     let invite = new MessageEmbed()
-    .setTitle(`Invite ${client.user.username}`)
-    .setDescription(`Want me in your server? Invite me today! \n\n [Invite Link](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=${permissions}&scope=bot)`)
+    .setTitle(`Ba Invite Bot Be Servert Azash Hemaiat Ko😊 ${client.user.username}`)
+    .setDescription(`Montazer chi hasti🤨? Bodo mano be servert add kon🙂😘 \n\n [Invite Link](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=${permissions}&scope=bot)`)
     .setURL(`https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=${permissions}&scope=bot`)
     .setColor("BLUE")
     return message.channel.send(invite);
