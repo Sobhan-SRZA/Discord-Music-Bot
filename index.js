@@ -1,18 +1,5 @@
-const express = require("express");
-const app = express();
-
-app.get("/", (request, response) => {
-  console.log("Ping received!");
-  response.sendStatus(200);
-});
-
-// listen for requests :)
-const listener = app.listen(process.env.PORT, function() {
-  console.log('Your app is listening on port ' + listener.address().port);
-});
-
-
-require("dotenv").config();//Loading .env
+//Loading .env
+require("dotenv").config();
 const fs = require("fs");
 const { Collection, Client } = require("discord.js");
 
@@ -39,11 +26,11 @@ fs.readdir(__dirname + "/events/", (err, files) => {
 
 //Loading Commands
 
-fs.readdir("./commands/", (err, files) => {
+fs.readdir("/commands/", (err, files) => {
         if (err) return console.error(err);
   files.forEach((file) => {
     if (!file.endsWith(".js")) return;
-    let props = require(`./commands/${file}`);
+    let props = require(`/commands/${file}`);
     let commandName = file.split(".")[0];
     client.commands.set(commandName, props);
     console.log("Loading Command: "+commandName)
