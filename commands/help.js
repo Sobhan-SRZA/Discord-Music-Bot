@@ -17,11 +17,12 @@ module.exports = {
         })
 
         let embed = new MessageEmbed()
-        .setAuthor("Commands of "+client.user.username, "https://cdn.discordapp.com/attachments/865859167557255178/897552744402026556/undefined_-_Imgur.gif")
+
+      .setAuthor(`Requested by ${message.author.username}`, `${message.client.author.displayAvatarURL({ format: "png" })}`)
         .setColor("RANDOME")
         .setThumbnail(message.client.user.displayAvatarURL({ format: "png" }))
         .setDescription(allcmds)
-        .setFooter(`To get info of each command you can do ${client.config.prefix}help | Create by Sobhan.SRZA#2153`)
+        .setFooter(`To get info of each command you can do ${client.config.prefix}help | Create by Sobhan.SRZA#2153 :)`)
 
         if(!args[0])return message.channel.send(embed)
         else {
@@ -32,12 +33,13 @@ module.exports = {
             let commandinfo = new MessageEmbed()
             .setTitle("Command: "+command.info.name+" info")
             .setColor("RANDOM")
-            .setDescription(`
-Name: ${command.info.name}
-Description: ${command.info.description}
-Usage: \`\`${client.config.prefix}${command.info.name} ${command.info.usage}\`\`
-Aliases: ${command.info.aliases.join(", ")}
-`)
+            .setDescription()
+.addField(
+        `**${client.config.prefix}${command.info.name}**`,
+        `${command.info.description} | Aliases: (${command.info.aliases.join(", ")}` : ""})`,
+        true
+      );
+           .addField(`**Links**`, `**[Support Server](${support_server || "https://discord.gg/4pUbjscCmA"}) • [Invite](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=412353895745&scope=bot)**`)
             message.channel.send(commandinfo)
         }
     }
