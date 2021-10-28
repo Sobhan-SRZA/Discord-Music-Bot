@@ -34,9 +34,8 @@ module.exports = {
             .setTitle("Command: "+command.info.name+" info")
             .setColor("RANDOM")
             .setDescription()
-.addField(
-        `**${process.env.PREFIX}${command.info.name}**`,`${command.info.description( "")} | Aliases: (${command.info.aliases.join(", ")}` )
-           .addField(`**Links**`, `**[Support Server]("https://discord.gg/4pUbjscCmA"}) • [Invite](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=412353895745&scope=bot)**`)
+            .addField(`**${process.env.PREFIX}${command.info.name}**`,`${command.info.description( "")} | Aliases: (${command.info.aliases.join(", ")}` )
+            .addField(`**Links**`, `**[Support Server]("https://discord.gg/4pUbjscCmA"}) • [Invite](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=412353895745&scope=bot)**`)
             message.channel.send(commandinfo)
         }
     }
