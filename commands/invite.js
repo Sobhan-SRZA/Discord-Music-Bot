@@ -14,7 +14,7 @@ module.exports = {
     var permissions = 412353895745;
     
     let invite = new MessageEmbed()
-    .setTitle(`Ba Invite Bot Be Servert Azash Hemaiat Ko😊 ${client.user.username}`)
+    .setTitle(`Ba Invite Bot Be Servert Azash Hemaiat Kon☺ ${client.user.username}`)
     .setDescription(`Montazer chi hasti🤨? Bodo mano be servert add kon🙂😘 \n\n [Invite Link](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=${permissions}&scope=bot)`)
     .setURL(`https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=${permissions}&scope=bot`)
     .setColor("BLUE")
