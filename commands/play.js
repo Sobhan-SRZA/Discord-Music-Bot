@@ -107,7 +107,7 @@ Created by ${`Sobhan.SRZA#2153`}
     var online = afk[message.guild.id]
     if (!song){
       if (!online.afk) {
-        sendError("Leaving the voice channel because I think there are no songs in the queue. If you like the bot stay 24/7 in voice channel run `>afk`\n\nThank you for using my bot 🥰  ",  message.channel)
+        sendError("Leaving the voice channel because I think there are no songs in the queue. Thank you for using my bot 🥰  ",  message.channel)
         message.guild.me.voice.channel.leave();//If you want your bot stay in vc 24/7 remove this line :D
         message.client.queue.delete(message.guild.id);
       }
@@ -149,7 +149,7 @@ stream.on('error', function(er)  {
       .addField("Requested by", song.req.tag, true)
       .setFooter(`Views:${song.views} 
 ${song.ago} 
-Created by ${`Sobhan.SRZA#2153`}
+Created by ${`Sobhan.SRZA#2153 :)`}
       `)
       queue.textChannel.send(thing);
     };
