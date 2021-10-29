@@ -77,14 +77,14 @@ function generateQueueEmbed(message, queue) {
   
     const serverQueue =message.client.queue.get(message.guild.id);
     const embed = new MessageEmbed()
-     .setAuthor("Server Songs Queue", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
+     .setAuthor("Server Songs Queue", "https://cdn.discordapp.com/attachments/865859167557255178/897552744402026556/undefined_-_Imgur.gif")
     .setThumbnail(message.guild.iconURL())
     .setColor("BLUE")
     .setDescription(`${info}`)
     .addField("Now Playing", `[${queue[0].title}](${queue[0].url})`, true)
     .addField("Text Channel", serverQueue.textChannel, true)
     .addField("Voice Channel", serverQueue.voiceChannel, true)
-    .setFooter("Currently Server Volume is "+serverQueue.volume)
+    .setFooter(`${message.author.displayAvatarURL()}`,`Requested by ${message.author.username} | Currently Server Volume is `+serverQueue.volume)
      if(serverQueue.songs.length === 1)embed.setDescription(`No songs to play next add songs by \`\`${message.client.config.prefix}play <song_name>\`\``)
 
     embeds.push(embed);
