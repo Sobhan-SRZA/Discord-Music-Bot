@@ -23,6 +23,7 @@ module.exports = {
         .setThumbnail(message.client.user.displayAvatarURL({ format: "png" }))
         .setDescription(allcmds)
         .setFooter(`To get info of each command you can do ${process.env.PREFIX}help | Create by Sobhan.SRZA#2153 :)`)
+            .addField(`**Links**`, `**[Support Server](https://discord.gg/4pUbjscCmA) • [Invite](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=412353895745&scope=bot)**`)
 
         if(!args[0])return message.channel.send(embed)
         else {
@@ -31,11 +32,10 @@ module.exports = {
             if(!command)command = client.commands.find(x => x.info.aliases.includes(cmd))
             if(!command)return message.channel.send("Nakhondam🤨")
             let commandinfo = new MessageEmbed()
-            .setTitle("Command: "+command.info.name+" info")
+      .setTitle(("help", { botname: message.client.user.username }))
             .setColor("RANDOM")
             .setDescription()
             .addField(`**${process.env.PREFIX}${command.info.name}**`,`${command.info.description( "")} | Aliases: (${command.info.aliases.join(", ")}` )
-            .addField(`**Links**`, `**[Support Server]("https://discord.gg/4pUbjscCmA"}) • [Invite](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=412353895745&scope=bot)**`)
             message.channel.send(commandinfo)
         }
     }
