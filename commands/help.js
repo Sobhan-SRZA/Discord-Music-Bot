@@ -18,7 +18,7 @@ module.exports = {
 
         let embed = new MessageEmbed()
 
-      .setAuthor(`Requested by ${message.author.username}`, `${message.client.author.displayAvatarURL({ format: "png" })}`)
+      .setAuthor(`Requested by ${message.author.username}`, `${message.author.displayAvatarURL()}`)
         .setColor("RANDOME")
         .setThumbnail(message.client.user.displayAvatarURL({ format: "png" }))
         .setDescription(allcmds)
