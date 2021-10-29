@@ -84,13 +84,12 @@ module.exports = {
     if (serverQueue) {
       serverQueue.songs.push(song);
       let thing = new MessageEmbed()
-      .setAuthor("Song has been added to queue", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
+      .setAuthor("Song has been added to queue", "https://cdn.discordapp.com/attachments/902034609661943809/903788153826082836/894939860199174206.gif")
       .setThumbnail(song.img)
-      .setColor("YELLOW")
+      .setColor("RANDOM")
       .addField("Name", song.title, true)
       .addField("Duration", song.duration, true)
-      .addField("Requested by", song.req.tag, true)
-      .setFooter(`Views: ${song.views} | ${song.ago}`)
+      .setFooter(`Requested by ${message.author.username} | Views:${song.views} | ${song.ago}`,` ${message.author.displayAvatarURL()}`)
       return message.channel.send(thing);
     }
 
@@ -150,13 +149,15 @@ stream.on('error', function(er)  {
 
       dispatcher.setVolumeLogarithmic(queue.volume / 100);
       let thing = new MessageEmbed()
-      .setAuthor("Started Playing Music!", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
+      .setAuthor("Started Playing Music!", "https://cdn.discordapp.com/attachments/865859167557255178/897552744402026556/undefined_-_Imgur.gif")
       .setThumbnail(song.img)
-      .setColor("BLUE")
+      .setColor("RANDOM")
       .addField("Name", song.title, true)
       .addField("Duration", song.duration, true)
       .addField("Requested by", song.req.tag, true)
-      .setFooter(`Views: ${song.views} | ${song.ago}`)
+ .setFooter(`Views:${song.views} 
+${song.ago} 
+Created by ${`Sobhan.SRZA#2153`}`,`${message.author.displayAvatarURL()}`)
       queue.textChannel.send(thing);
     };
 
