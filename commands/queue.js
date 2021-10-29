@@ -84,7 +84,7 @@ function generateQueueEmbed(message, queue) {
     .addField("Now Playing", `[${queue[0].title}](${queue[0].url})`, true)
     .addField("Text Channel", serverQueue.textChannel, true)
     .addField("Voice Channel", serverQueue.voiceChannel, true)
-    .setFooter(`${message.author.displayAvatarURL()}`,`Requested by ${message.author.username} | Currently Server Volume is `+serverQueue.volume)
+    .setFooter(`Requested by ${message.author.username} | Currently Server Volume is `+serverQueue.volume,`${message.author.displayAvatarURL()}`)
      if(serverQueue.songs.length === 1)embed.setDescription(`No songs to play next add songs by \`\`${message.client.config.prefix}play <song_name>\`\``)
 
     embeds.push(embed);
