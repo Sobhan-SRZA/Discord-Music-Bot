@@ -60,7 +60,7 @@ module.exports = {
 					await handleVideo(video, message, channel, true); // eslint-disable-line no-await-in-loop
 				}
 				let thing = new MessageEmbed()
-					.setAuthor("Playlist has been added to queue", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
+					.setAuthor("Playlist has been added to queue", "https://cdn.discordapp.com/attachments/902034609661943809/903788153826082836/894939860199174206.gif")
 					.setThumbnail(songInfo.thumbnail)
 					.setColor("GREEN")
 					.setDescription(`✅  **|**  Playlist: **\`${songInfo.title}\`** has been added \`${songInfo.videoCount}\` video to the queue`)
@@ -109,13 +109,12 @@ module.exports = {
 				serverQueue.songs.push(song);
 				if (playlist) return;
 				let thing = new MessageEmbed()
-					.setAuthor("Song has been added to queue", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
+      .setAuthor("Song has been added to queue", "https://cdn.discordapp.com/attachments/902034609661943809/903788153826082836/894939860199174206.gif")
 					.setThumbnail(song.img)
-					.setColor("YELLOW")
+					.setColor("RANDOM")
 					.addField("Name", song.title, true)
 					.addField("Duration", song.duration, true)
-					.addField("Requested by", song.req.tag, true)
-					.setFooter(`Views: ${song.views} | ${song.ago}`)
+      .setFooter(`Requested by ${message.author.username} | Views:${song.views} | ${song.ago}`,` ${message.author.displayAvatarURL()}`)
 				return message.channel.send(thing);
 			}
 			return;
@@ -130,7 +129,7 @@ async	function play(guild, song) {
     var online = afk[message.guild.id]
     if (!song){
       if (!online.afk) {
-        sendError("Leaving the voice channel because I think there are no songs in the queue. If you like the bot stay 24/7 in voice channel run `!afk`\n\nThank you for using my code! [GitHub](https://github.com/SudhanPlayz/Discord-MusicBot)", message.channel)
+        sendError("Leaving the voice channel because I think there are no songs in the queue. If you like the bot stay 24/7 in voice channel run `>afk`\n\nThank you for using my bot 🥰  ",  message.channel)
         message.guild.me.voice.channel.leave();//If you want your bot stay in vc 24/7 remove this line :D
         message.client.queue.delete(message.guild.id);
       }
@@ -165,14 +164,15 @@ stream.on('error', function(er)  {
 
     dispatcher.setVolume(serverQueue.volume / 100);
 let thing = new MessageEmbed()
-				.setAuthor("Started Playing Music!", "https://raw.githubusercontent.com/SudhanPlayz/Discord-MusicBot/master/assets/Music.gif")
-				.setThumbnail(song.img)
-				.setColor("BLUE")
-				.addField("Name", song.title, true)
-				.addField("Duration", song.duration, true)
-				.addField("Requested by", song.req.tag, true)
-				.setFooter(`Views: ${song.views} | ${song.ago}`)
-    serverQueue.textChannel.send(thing);
+      .setAuthor("Started Playing Music!", "https://cdn.discordapp.com/attachments/865859167557255178/897552744402026556/undefined_-_Imgur.gif")
+      .setThumbnail(song.img)
+      .setColor("RANDOM")
+      .addField("Name", song.title, true)
+      .addField("Duration", song.duration, true)
+      .addField("Requested by", song.req.tag, true)
+ .setFooter(`Views:${song.views} 
+${song.ago} 
+Created by ${`Sobhan.SRZA#2153`}`,`${message.author.displayAvatarURL()}`)
 }
 
 
