@@ -14,7 +14,7 @@ module.exports = {
     if (!serverQueue) return sendError("There is nothing playing in your queue", message.channel);
     let song = serverQueue.songs[0]
     let thing = new MessageEmbed()
-      .setAuthor("Now Playing", "https://cdn.discordapp.com/attachments/865859167557255178/897552744402026556/undefined_-_Imgur.gif")
+      .setAuthor("Now Playing", "https://cdn.discordapp.com/attachments/902034609661943809/903788153826082836/894939860199174206.gif")
       .setThumbnail(song.img)
       .setColor("RANDOM")
       .addField("Name", song.title, true)
