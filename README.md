@@ -50,6 +50,8 @@ PREFIX="Youre-bot-prefix"
 
 `npm i`
 
+`npm i express`
+
 بات شما روشن شد و آماده کار است
 :D
 ❤
@@ -113,6 +115,8 @@ in part`TOKEN`Add your baton token and. in part`PREFIX`Edit Button Perfix
 To run, just enter the terminal and enter the following code and enter
 
 `npm i`
+
+`npm i express`
 
 Your bot is on and ready to go
 :D
