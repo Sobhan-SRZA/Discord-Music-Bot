@@ -60,7 +60,7 @@ module.exports = {
 					await handleVideo(video, message, channel, true); // eslint-disable-line no-await-in-loop
 				}
 				let thing = new MessageEmbed()
-					.setAuthor("Playlist has been added to queue", "https://cdn.discordapp.com/attachments/902034609661943809/903788153826082836/894939860199174206.gif")
+					.setAuthor("Playlist has been added to queue", "https://cdn.discordapp.com/attachments/865859167557255178/897552744402026556/undefined_-_Imgur.gif")
 					.setThumbnail(songInfo.thumbnail)
 					.setColor("GREEN")
 					.setDescription(`✅  **|**  Playlist: **\`${songInfo.title}\`** has been added \`${songInfo.videoCount}\` video to the queue`)
@@ -109,7 +109,7 @@ module.exports = {
 				serverQueue.songs.push(song);
 				if (playlist) return;
 				let thing = new MessageEmbed()
-      .setAuthor("Song has been added to queue", "https://cdn.discordapp.com/attachments/902034609661943809/903788153826082836/894939860199174206.gif")
+      .setAuthor("Song has been added to queue", "https://cdn.discordapp.com/attachments/865859167557255178/897552744402026556/undefined_-_Imgur.gif")
 					.setThumbnail(song.img)
 					.setColor("RANDOM")
 					.addField("Name", song.title, true)
