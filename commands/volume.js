@@ -21,7 +21,7 @@ module.exports = {
     serverQueue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
     let xd = new MessageEmbed()
     .setDescription(`I set the volume to: **${args[0]/1}/100**`)
-    .setAuthor("Server Volume Manager", "https://cdn.discordapp.com/attachments/887382483530821719/903794692267864075/872417796166938634.gif")
+    .setAuthor("Server Volume Manager", "https://cdn.discordapp.com/attachments/902034609661943809/909701506771595304/872417796166938sd634.gif")
     .setColor("BLUE")
     return message.channel.send(xd);
   },
