@@ -2,23 +2,23 @@
 
 
 
-آدرس توییچ[Twich](https://www.twitch.tv/sobhan_srza)
+آدرس [توییچ](https://www.twitch.tv/sobhan_srza)
  
-آدرس کانال تلگرام من[Telegram](https://t.me/SobhanSRZA)
+آدرس کانال [تلگرام من](https://t.me/SobhanSRZA)
 
-آدرس اینستگرام[Instegram](https://www.instagram.com/srza._.gamer)
+آدرس [اینستگرام](https://www.instagram.com/srza._.gamer)
  
-آدرس آپارات[Aparat](https://www.aparat.com/Sobhan.SRZA)
+آدرس [آپارات](https://www.aparat.com/Sobhan.SRZA)
 
-آدرس یوتوب[YouTube](https://b2n.ir/srza.-.gamer)
+آدرس [یوتوب](https://b2n.ir/srza.-.gamer)
 
-آدرس دیسکورد[Discord](https://discord.gg/YZyy4Th6NNz)
+آدرس [دیسکورد](https://discord.gg/YZyy4Th6NNz)
 
 ## اگه خیلی به موضوعات فیلم و کارتون علاقه دارید پس چنل دومم رو فراموش نکنید👇🏼❤🌹
 
-آدرس یوتوب[YouTube](https://b2n.ir/srza._.action)
+آدرس [یوتوب](https://b2n.ir/srza._.action)
 
-آدرس دیسکورد[Discord](https://discord.gg/pcYRw54xEP)
+آدرس [دیسکورد](https://discord.gg/pcYRw54xEP)
 
 ## آموزش نصب و ران کردن بات
 
@@ -64,25 +64,24 @@ PREFIX="Youre-bot-prefix"
 ## My addresses in cyberspace 👇🏼🙃📡
 
 
-Twitch address[Twich](https://www.twitch.tv/sobhan_srza)
+[Twich](https://www.twitch.tv/sobhan_srza) address
  
-My Telegram Channel Address[Telegram](https://t.me/SobhanSRZA)
+My [Telegram](https://t.me/SobhanSRZA) Channel Address
 
-Instagram address[Instegram](https://www.instagram.com/srza._.gamer)
+[Instegram](https://www.instagram.com/srza._.gamer) address
  
-Address of the Aparat[Aparat](https://www.aparat.com/Sobhan.SRZA)
+Address of the [Aparat](https://www.aparat.com/Sobhan.SRZA)
 
-YouTube address[YouTube](https://b2n.ir/srza.-.gamer)
+[YouTube](https://b2n.ir/srza.-.gamer) address
 
- Discord address[Discord](https://discord.gg/YZyy4Th6NNz)
-
+[Discord](https://discord.gg/YZyy4Th6NNz)address
 
 
 ## If you are very interested in movies and cartoons, then do not forget my second channel 👇🏼❤🌹📺
 
-YouTube address[YouTube](https://b2n.ir/srza._.action)
+[YouTube](https://b2n.ir/srza._.action) address
 
-Discord address[Discord](https://discord.gg/pcYRw54xEP)
+[Discord](https://discord.gg/pcYRw54xEP) address
 
 
 
