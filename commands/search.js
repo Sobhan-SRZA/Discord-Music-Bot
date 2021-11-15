@@ -84,7 +84,7 @@ module.exports = {
     if (serverQueue) {
       serverQueue.songs.push(song);
       let thing = new MessageEmbed()
-      .setAuthor("Song has been added to queue", "https://cdn.discordapp.com/attachments/902034609661943809/903788153826082836/894939860199174206.gif")
+      .setAuthor("Song has been added to queue", "https://cdn.discordapp.com/attachments/902034619791196221/905054458793312327/2GU.gif")
       .setThumbnail(song.img)
       .setColor("RANDOM")
       .addField("Name", song.title, true)
