@@ -12,7 +12,7 @@
 
 آدرس [یوتوب](https://b2n.ir/srza.-.gamer)
 
-آدرس [دیسکورد](https://discord.gg/YZyy4Th6NNz)
+آدرس [دیسکورد](https://discord.gg/q9NXmG62J9)
 
 ## اگه خیلی به موضوعات فیلم و کارتون علاقه دارید پس چنل دومم رو فراموش نکنید👇🏼❤🌹
 
@@ -74,7 +74,7 @@ Address of the [Aparat](https://www.aparat.com/Sobhan.SRZA)
 
 [YouTube](https://b2n.ir/srza.-.gamer) address
 
-[Discord](https://discord.gg/YZyy4Th6NNz)address
+[Discord](https://discord.gg/q9NXmG62J9)address
 
 
 ## If you are very interested in movies and cartoons, then do not forget my second channel 👇🏼❤🌹📺
