@@ -85,11 +85,14 @@ module.exports = {
       serverQueue.songs.push(song);
       let thing = new MessageEmbed()
       .setAuthor("Song has been added to queue", "https://cdn.discordapp.com/attachments/902034619791196221/905054458793312327/2GU.gif")
-      .setThumbnail(song.img)
+      .setThumbnail(`${message.author.displayAvatarURL()}`)
       .setColor("RANDOM")
       .addField("Name", song.title, true)
       .addField("Duration", song.duration, true)
-      .setFooter(`Requested by ${message.author.username} | Views:${song.views} | ${song.ago}`,` ${message.author.displayAvatarURL()}`)
+      .setImage(song.img)
+      .setFooter(`Requested by ${message.author.username} 
+       Views:${song.views} 
+       ${song.ago}`)
       return message.channel.send(thing);
     }
 
@@ -150,14 +153,15 @@ stream.on('error', function(er)  {
       dispatcher.setVolumeLogarithmic(queue.volume / 100);
       let thing = new MessageEmbed()
       .setAuthor("Started Playing Music!", "https://cdn.discordapp.com/attachments/865859167557255178/897552744402026556/undefined_-_Imgur.gif")
-      .setThumbnail(song.img)
+      .setThumbnail(message.author.displayAvatarURL())
       .setColor("RANDOM")
       .addField("Name", song.title, true)
       .addField("Duration", song.duration, true)
       .addField("Requested by", song.req.tag, true)
+      .setImage(song.img)
  .setFooter(`Views:${song.views} 
 ${song.ago} 
-Created by ${`Sobhan.SRZA#2153`}`,`${message.author.displayAvatarURL()}`)
+Created by Mr.SIN RE#1528 :)`)
       queue.textChannel.send(thing);
     };
 
