@@ -142,12 +142,12 @@ stream.on('error', function(er)  {
       dispatcher.setVolumeLogarithmic(queue.volume / 100);
       let thing = new MessageEmbed()
       .setAuthor("Started Playing Music!", "https://cdn.discordapp.com/attachments/865859167557255178/897552744402026556/undefined_-_Imgur.gif")
-      .setThumbnail(message.author.displayAvatarURL())
+      .setThumbnail(`${message.author.displayAvatarURL()}`)
       .setColor("RANDOM")
       .addField("Name", song.title, true)
       .addField("Duration", song.duration, true)
       .addField("Requested by", song.req.tag, true)
-      .addImage(song.img)
+      .setImage(song.img)
       .setFooter(`Views:${song.views} 
 ${song.ago} 
 Created by Mr.SIN RE#1528 :)`)
