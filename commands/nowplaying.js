@@ -15,11 +15,14 @@ module.exports = {
     let song = serverQueue.songs[0]
     let thing = new MessageEmbed()
       .setAuthor("Now Playing", "https://cdn.discordapp.com/attachments/902034609661943809/903788153826082836/894939860199174206.gif")
-      .setThumbnail(song.img)
+      .setThumbnail(`${message.author.displayAvatarURL()}`)
       .setColor("RANDOM")
+    .setImage(song.img)
       .addField("Name", song.title, true)
       .addField("Duration", song.duration, true)
-      .setFooter(`Requested by ${message.author.username} | Views:${song.views} | ${song.ago}`,` ${message.author.displayAvatarURL()}`)
+      .setFooter(`Requested by ${message.author.username} 
+       Views:${song.views} 
+       ${song.ago}`)
     return message.channel.send(thing)
   },
 };
