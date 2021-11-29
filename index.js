@@ -45,5 +45,14 @@ fs.readdir("./commands/", (err, files) => {
         
 );
 
+client.on("ready", () => {
+  function YousamPower() {
+    let sezar = [`${PREFIX}play` , `${PREFIX}help` ]
+    let Power = Math.floor(Math.random() * sezar.length);
+    client.user.setActivity(sezar[Power], {type: "PLAYING"});//can be LISTENING, WATCHING, PLAYING, STREAMING
+  }; setInterval(YousamPower, 5000)
+    client.user.setStatus("dnd")//can be invesible, online, idle, dnd
+});
+
 //Logging in to discord
 client.login(process.env.TOKEN)
