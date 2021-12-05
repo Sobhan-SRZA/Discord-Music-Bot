@@ -1,6 +1,9 @@
 module.exports = async (client) => {
   console.log(`[API] Logged in as ${client.user.username}`);
-  await client.user.setActivity(`${process.env.PREFIX}help`, { type: "LISTENING" }) //can be LISTENING, WATCHING, PLAYING, STREAMING
-  client.user.setStatus("dnd") //dnd,idle,invesible,online
+  function YousamPower() {
+    let sezar = [`${process.env.PREFIX}play` , `${process.env.PREFIX}help` ]
+    let Power = Math.floor(Math.random() * sezar.length);
+    client.user.setActivity(sezar[Power], {type: "PLAYING"});//can be LISTENING, WATCHING, PLAYING, STREAMING
+  }; setInterval(YousamPower, 5000)
+    client.user.setStatus("dnd")//can be invesible, online, idle, dnd
 }
-
