@@ -45,14 +45,6 @@ fs.readdir("./commands/", (err, files) => {
         
 );
 
-client.on("ready", () => {
-  function YousamPower() {
-    let sezar = [`${prefix}play` , `${prefix}help` ]
-    let Power = Math.floor(Math.random() * sezar.length);
-    client.user.setActivity(sezar[Power], {type: "PLAYING"});//can be LISTENING, WATCHING, PLAYING, STREAMING
-  }; setInterval(YousamPower, 5000)
-    client.user.setStatus("dnd")//can be invesible, online, idle, dnd
-});
 
 //serverlist
 client.on('message', message => {
