@@ -22,7 +22,7 @@ module.exports = {
         .setColor("RANDOME")
         .setThumbnail(message.client.user.displayAvatarURL({ format: "png" }))
         .setDescription(allcmds)
-        .setFooter(`To get info of each command you can do ${process.env.PREFIX}help | Create by Sobhan.SRZA#2153 :)`)
+        .setFooter(`To get info of each command you can do ${process.env.PREFIX}help | Create by Mr.SIN RE#1528 :)`)
             .addField(`**Links**`, `**[Support Server](https://discord.gg/4pUbjscCmA) • [Invite](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=412353895745&scope=bot)**`)
 
         if(!args[0])return message.channel.send(embed)
