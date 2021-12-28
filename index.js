@@ -72,10 +72,10 @@ client.on('message', message => {
     return message.channel.send(Guilds, { split: { char: "\n" } }); }
 });
 
-//bot stats
+//about bot
 client.on('message', message => {
     if(message.author.bot) return;
-    if(message.content.startsWith(`${prefix}stats`)){
+    if(message.content.startsWith(`${prefix}about`)){
     let infoEmbed = new Discord.MessageEmbed()
       infoEmbed.setColor("RANDOM");
       infoEmbed.setTitle(`Stats from \`${client.user.username}\``);
@@ -89,11 +89,11 @@ client.on('message', message => {
       infoEmbed.addField(":homes: Servers",`┕\`${client.guilds.cache.size}\``, true);
       infoEmbed.addField(":busts_in_silhouette: Users",`┕\`${client.users.cache.size}\``,true);
       infoEmbed.addField(":control_knobs: API Latency",`┕\`${message.client.ws.ping}ms\``,true);
-      infoEmbed.addField(":robot: Version",`┕\`Alpha 1.0.0\``,true);
+      infoEmbed.addField(":robot: Version",`┕\`Omega 5.2.1\``,true);
 
       infoEmbed.addField(":blue_book: Discord.js",`┕\`v12.2.1\``,true);
 
-          infoEmbed.addField(":green_book: Node",`┕\`14.5.6\``,true);
+          infoEmbed.addField(":green_book: Node",`┕\`16.1.2\``,true);
       infoEmbed.setTimestamp();
       
             message.channel.send(infoEmbed)
