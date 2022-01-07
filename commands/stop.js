@@ -25,6 +25,6 @@ if(!serverQueue.connection.dispatcher)return
       }
     message.client.queue.delete(message.guild.id);
     serverQueue.songs = [];
-    message.react("❌")
+    message.react("⏹")
   },
 };

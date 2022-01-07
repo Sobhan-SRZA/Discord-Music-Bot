@@ -36,6 +36,6 @@ if(!serverQueue.connection.dispatcher)return
         message.client.queue.delete(message.guild.id);
         return sendError(`:notes: The player has stopped and the queue has been cleared.: ${error}`, message.channel);
       }
-    message.react("✅")
+    message.react("⏭")
   },
 };

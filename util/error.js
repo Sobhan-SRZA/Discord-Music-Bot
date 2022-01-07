@@ -1,3 +1,4 @@
+
 const { MessageEmbed } = require("discord.js")
 
 /**
@@ -7,7 +8,7 @@ const { MessageEmbed } = require("discord.js")
  */
 module.exports = async (text, channel) => {
     let embed = new MessageEmbed()
-    .setColor("RANDOME")
+    .setColor("RANDOM")
     .setDescription(text)
     .setFooter("created by Mr.SIN RE#1528 :)")
     await channel.send(embed)

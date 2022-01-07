@@ -3,7 +3,7 @@ module.exports = async (client, message) => {
 
   //Prefixes also have mention match
   const prefixMention = new RegExp(`^<@!?${client.user.id}> `);
-  const prefix = message.content.match(prefixMention) ? message.content.match(prefixMention)[0] : process.evn.PREFIX;
+  const prefix = message.content.match(prefixMention) ? message.content.match(prefixMention)[0] : client.config.prefix;
 
   if (message.content.indexOf(prefix) !== 0) return;
 

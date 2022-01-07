@@ -1,5 +1,5 @@
 {
-  "name": "advanced-discord-music-bot-sizar-team",
+  "name": "advanced-discord-music-bot",
   "version": "3.0.0",
   "description": "option haye dige bot dakhel discord",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "node index.js"
   },
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "dependencies": {
     "@discordjs/opus": "^0.3.2",
@@ -17,7 +17,7 @@
     "ffmpeg": "0.0.4",
     "ffmpeg-static": "^4.2.7",
     "yt-search": "^2.2.4",
-    "ytdl-core": "^4.1.4",
+    "ytdl-core": "^4.1.1",
     "opusscript": "^0.0.7",
     "youtube-sr": "^2.0.1",
     "lyrics-finder": "^21.4.0",

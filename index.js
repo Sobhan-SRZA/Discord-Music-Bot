@@ -7,18 +7,19 @@ app.listen(port, () =>
 console.log(`Your app is listening a http://localhost/${port}`)
 );
 
-
+//consol
 require("dotenv").config();//Loading .env
 const fs = require("fs");
 const { Collection, Client } = require("discord.js");
-
-const client = new Client();//Making a discord bot client
+const Discord = require("discord.js");
+const client = new Discord.Client();//Making a discord bot client
 client.commands = new Collection();//Making client.commands as a Discord.js Collection
 client.queue = new Map()
-
 client.config = {
   prefix: process.env.PREFIX
 }
+const prefix = process.env.PREFIX;
+const moment = require("moment");
 
 //Loading Events
 fs.readdir(__dirname + "/events/", (err, files) => {
@@ -42,7 +43,7 @@ fs.readdir("./commands/", (err, files) => {
     console.log("Loading Command: "+commandName)
   });
 },
-        
+         
 );
 
 //status
@@ -78,27 +79,36 @@ client.on('message', message => {
     if(message.content.startsWith(`${prefix}about`)){
     let infoEmbed = new Discord.MessageEmbed()
       infoEmbed.setColor("RANDOM");
-      infoEmbed.setTitle(`Stats from \`${client.user.username}\``);
+      infoEmbed.setTitle(`About \`${client.user.username}\``);
       infoEmbed.addField(":ping_pong: Ping",`┕\`${Math.round(client.ws.ping)}ms\``,true);
-
       infoEmbed.addField(":clock1: Uptime", `┕\`${moment.duration(message.client.uptime)}\``,true);
       infoEmbed.addField(":file_cabinet: Memory",`┕\`${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
             2
           )}mb\``,true);
-
       infoEmbed.addField(":homes: Servers",`┕\`${client.guilds.cache.size}\``, true);
       infoEmbed.addField(":busts_in_silhouette: Users",`┕\`${client.users.cache.size}\``,true);
       infoEmbed.addField(":control_knobs: API Latency",`┕\`${message.client.ws.ping}ms\``,true);
-      infoEmbed.addField(":robot: Version",`┕\`Omega 5.2.1\``,true);
-
+      infoEmbed.addField(":robot: Version",`┕\`Omega 3.1.0\``,true);
       infoEmbed.addField(":blue_book: Discord.js",`┕\`v12.2.1\``,true);
-
-          infoEmbed.addField(":green_book: Node",`┕\`16.1.2\``,true);
+      infoEmbed.addField(":green_book: Node",`┕\`14.5.6\``,true);
       infoEmbed.setTimestamp();
-      
+      infoEmbed.setFooter(`Requested by ${message.author.username}`, `${message.author.displayAvatarURL()}`);
             message.channel.send(infoEmbed)
     }
-    });
+});
 
+//ping
+client.on('message', message => {
+    if(message.author.bot) return;
+    if(message.content.startsWith(`${prefix}ping`)){
+    let pingEmbed = new Discord.MessageEmbed()
+      pingEmbed.setColor("RANDOM");
+      pingEmbed.setDescription(`**Ping Pong🏓!**`);
+      pingEmbed.addField(`📱Bot Ping ${client.user.username}`,`**\`${Math.round(client.ws.ping)}ms\`**`,true);
+      pingEmbed.setTimestamp();
+      pingEmbed.setFooter(`Requested by ${message.author.username}`, `${message.author.displayAvatarURL()}`);
+   message.channel.send(pingEmbed);
+    }
+});
 //Logging in to discord
 client.login(process.env.TOKEN)

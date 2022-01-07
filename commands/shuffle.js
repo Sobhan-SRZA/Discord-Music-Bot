@@ -20,7 +20,7 @@ try{
     }
     serverQueue.songs = songs;
     message.client.queue.set(message.guild.id, serverQueue);
-    message.react("✅")
+    message.react("🔀")
       } catch (error) {
         message.guild.me.voice.channel.leave();
         message.client.queue.delete(message.guild.id);

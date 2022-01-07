@@ -25,8 +25,8 @@ module.exports = {
 
     let lyricsEmbed = new MessageEmbed()
       .setAuthor(`${queue.songs[0].title} — Lyrics`, "https://cdn.discordapp.com/attachments/865859167557255178/897552744402026556/undefined_-_Imgur.gif")
-      .setThumbnail(queue.songs[0].img)
-      .setColor("YELLOW")
+      .setImage(queue.songs[0].img)
+      .setColor("RANDOM")
       .setDescription(lyrics)
       .setTimestamp();
 

@@ -9,34 +9,29 @@ module.exports = {
     },
 
     run: async function(client, message, args){
-        var allcmds = "";
 
+
+    
+    let music = new MessageEmbed()
+      music.setAuthor(`Requested by ${message.author.username}`, `${message.author.displayAvatarURL()}`)
+      music.setThumbnail(message.client.user.displayAvatarURL({ format: "png" }))
+      music.setTitle(`${client.user.username}  Help  :)`)
+      music.setDescription('List of all commands')
+      music.setFooter(`To get info of each command you can do ${process.env.PREFIX}help | Create by Mr.SIN RE#1528 :)`, `https://cdn.discordapp.com/attachments/902034619791196221/905054458793312327/2GU.gif`)
+      music.setColor("RANDOM")
+           var allcmds = "";   
         client.commands.forEach(cmd => {
             let cmdinfo = cmd.info
-            allcmds+="**"+process.env.PREFIX+cmdinfo.name+" "+cmdinfo.usage+"** ~ "+cmdinfo.description+"\n"
-        })
 
-        let embed = new MessageEmbed()
+      music.addField(
+        `**${process.env.PREFIX}${cmdinfo.name}${cmdinfo.usage}**`,
+        `\`${cmdinfo.description} | Aliases: (${cmdinfo.aliases})\``,
+        true
+      );
+    })
+      music.addField(`**Links**`, `**[Support Server](${"https://discord.gg/5GYNec4urW"}) • [Invite](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=137775017040&scope=bot)**`)
 
-      .setAuthor(`Requested by ${message.author.username}`, `${message.author.displayAvatarURL()}`)
-        .setColor("RANDOME")
-        .setThumbnail(message.client.user.displayAvatarURL({ format: "png" }))
-        .setDescription(allcmds)
-        .setFooter(`To get info of each command you can do ${process.env.PREFIX}help | Create by Mr.SIN RE#1528 :)`)
-            .addField(`**Links**`, `**[Support Server](https://discord.gg/vgnhGXabNw) • [Invite](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=412353895745&scope=bot)**`)
-
-        if(!args[0])return message.channel.send(embed)
-        else {
-            let cmd = args[0]
-            let command = client.commands.get(cmd)
-            if(!command)command = client.commands.find(x => x.info.aliases.includes(cmd))
-            if(!command)return message.channel.send("Nakhondam🤨")
-            let commandinfo = new MessageEmbed()
-      .setTitle(("help", { botname: message.client.user.username }))
-            .setColor("RANDOM")
-            .setDescription()
-            .addField(`**${process.env.PREFIX}${command.info.name}**`,`${command.info.description( "")} | Aliases: (${command.info.aliases.join(", ")}` )
-            message.channel.send(commandinfo)
-        }
+      message.channel.send(music)
+    
     }
 }
