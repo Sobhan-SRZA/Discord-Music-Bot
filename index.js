@@ -46,7 +46,7 @@ fs.readdir("./commands/", (err, files) => {
          
 );
 
-//status
+//Bot Status
 const srza = require('discord.js');
 srza.Constants.DefaultOptions.ws.properties.$browser = "Discord Android";
 client.on("ready", () => {
@@ -65,50 +65,6 @@ client.on("ready", () => {
         }; setInterval(srza, 3000)
 });
 
-//serverlist
-client.on('message', message => {
-  if (message.content === `${prefix}serverlist`) { 
-    const Guilds = client.guilds.cache.array().map((G, I) => `${I + 1}. **${G.name}** - **${G.id}**`).join("\n");
-    if (!Guilds) return message.channel.send("No Guild");
-    return message.channel.send(Guilds, { split: { char: "\n" } }); }
-});
 
-//about bot
-client.on('message', message => {
-    if(message.author.bot) return;
-    if(message.content.startsWith(`${prefix}about`)){
-    let infoEmbed = new Discord.MessageEmbed()
-      infoEmbed.setColor("RANDOM");
-      infoEmbed.setTitle(`About \`${client.user.username}\``);
-      infoEmbed.addField(":ping_pong: Ping",`┕\`${Math.round(client.ws.ping)}ms\``,true);
-      infoEmbed.addField(":clock1: Uptime", `┕\`${moment.duration(message.client.uptime)}\``,true);
-      infoEmbed.addField(":file_cabinet: Memory",`┕\`${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(
-            2
-          )}mb\``,true);
-      infoEmbed.addField(":homes: Servers",`┕\`${client.guilds.cache.size}\``, true);
-      infoEmbed.addField(":busts_in_silhouette: Users",`┕\`${client.users.cache.size}\``,true);
-      infoEmbed.addField(":control_knobs: API Latency",`┕\`${message.client.ws.ping}ms\``,true);
-      infoEmbed.addField(":robot: Version",`┕\`Omega 3.1.0\``,true);
-      infoEmbed.addField(":blue_book: Discord.js",`┕\`v12.2.1\``,true);
-      infoEmbed.addField(":green_book: Node",`┕\`14.5.6\``,true);
-      infoEmbed.setTimestamp();
-      infoEmbed.setFooter(`Requested by ${message.author.username}`, `${message.author.displayAvatarURL()}`);
-            message.channel.send(infoEmbed)
-    }
-});
-
-//ping
-client.on('message', message => {
-    if(message.author.bot) return;
-    if(message.content.startsWith(`${prefix}ping`)){
-    let pingEmbed = new Discord.MessageEmbed()
-      pingEmbed.setColor("RANDOM");
-      pingEmbed.setDescription(`**Ping Pong🏓!**`);
-      pingEmbed.addField(`📱Bot Ping ${client.user.username}`,`**\`${Math.round(client.ws.ping)}ms\`**`,true);
-      pingEmbed.setTimestamp();
-      pingEmbed.setFooter(`Requested by ${message.author.username}`, `${message.author.displayAvatarURL()}`);
-   message.channel.send(pingEmbed);
-    }
-});
 //Logging in to discord
 client.login(process.env.TOKEN)
