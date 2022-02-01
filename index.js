@@ -19,6 +19,7 @@ client.config = {
   prefix: process.env.PREFIX
 }
 const prefix = process.env.PREFIX;
+require('discord-buttons')(client);
 
 
 //Loading Events
