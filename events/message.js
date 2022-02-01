@@ -2,8 +2,11 @@ module.exports = async (client, message) => {
   if (message.author.bot) return;
 
   //Prefixes also have mention match
+  const db = require("quick.db");
   const prefixMention = new RegExp(`^<@!?${client.user.id}> `);
-  const prefix = message.content.match(prefixMention) ? message.content.match(prefixMention)[0] : client.config.prefix;
+    var prefix = await db.fetch(`prefix_${message.guild.id}`);
+    if (prefix == null) prefix = message.content.match(prefixMention) ? message.content.match(prefixMention)[0] : client.config.prefix;
+
 
   if (message.content.indexOf(prefix) !== 0) return;
 

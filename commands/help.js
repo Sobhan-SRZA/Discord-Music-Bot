@@ -11,21 +11,22 @@ module.exports = {
     run: async function(client, message, args){
 
 
-    
+      const db = require("quick.db");
+    var prefix = await db.fetch(`prefix_${message.guild.id}`)||process.env.PREFIX;
     let music = new MessageEmbed()
       music.setAuthor(`Requested by ${message.author.username}`, `${message.author.displayAvatarURL()}`)
       music.setThumbnail(message.client.user.displayAvatarURL({ format: "png" }))
       music.setTitle(`${client.user.username}  Help  :)`)
       music.setDescription('List of all commands')
-      music.setFooter(`To get info of each command you can do ${process.env.PREFIX}help | Create by Mr.SIN RE#1528 :)`, `https://cdn.discordapp.com/attachments/902034619791196221/905054458793312327/2GU.gif`)
+      music.setFooter(`To get info of each command you can do ${prefix}help | Create by Mr.SIN RE#1528 :)`, `https://cdn.discordapp.com/attachments/902034619791196221/905054458793312327/2GU.gif`)
       music.setColor("RANDOM")
            var allcmds = "";   
         client.commands.forEach(cmd => {
             let cmdinfo = cmd.info
 
       music.addField(
-        `**${process.env.PREFIX}${cmdinfo.name}${cmdinfo.usage}**`,
-        `\`${cmdinfo.description} | Aliases: (${cmdinfo.aliases})\``,
+        `**${prefix}${cmdinfo.name}${cmdinfo.usage}**`,
+        `\`Description: ${cmdinfo.description} | Aliases: (${cmdinfo.aliases})\``,
         true
       );
     })

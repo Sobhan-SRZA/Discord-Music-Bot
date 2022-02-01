@@ -2,7 +2,7 @@ module.exports = {
   info: {
     name: "serverlist",
     description: "List of all servers that bot :D",
-    usage: "serverlist",
+    usage: "",
     aliases: ["sl","servers"],
   },
  run: async (client, message, args) => {

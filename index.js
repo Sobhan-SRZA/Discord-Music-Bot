@@ -19,7 +19,7 @@ client.config = {
   prefix: process.env.PREFIX
 }
 const prefix = process.env.PREFIX;
-const moment = require("moment");
+
 
 //Loading Events
 fs.readdir(__dirname + "/events/", (err, files) => {
@@ -46,7 +46,7 @@ fs.readdir("./commands/", (err, files) => {
          
 );
 
-//Bot Status
+//status
 const srza = require('discord.js');
 srza.Constants.DefaultOptions.ws.properties.$browser = "Discord Android";
 client.on("ready", () => {
@@ -63,7 +63,9 @@ client.on("ready", () => {
     let godratPlay = Math.floor(Math.random() * statusPlay.length);     
    client.user.setActivity(sezar[Power], {type: statusPlay[godratPlay]});
         }; setInterval(srza, 3000)
+  console.log(`${client.user.tag} IS ONLINE`)
 });
+
 
 
 //Logging in to discord
