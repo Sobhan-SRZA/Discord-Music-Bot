@@ -1,3 +1,6 @@
+[![Deploy on Herokucd](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sobhan-SRZA/Discord-Music-Bot/)
+
+[![Use on Replit](https://repl.it/badge/github/Sobhan-SRZA/Discord-Music-Bot/)](https://repl.it/github/Sobhan-SRZA/Discord-Music-Bot/)
 ## آدرس های من در فضای مجازی👇🏼🙃
 
 
