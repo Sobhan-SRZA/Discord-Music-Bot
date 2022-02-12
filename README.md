@@ -1,3 +1,4 @@
+# زبان فارسی
 [![Deploy on Herokucd](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sobhan-SRZA/Discord-Music-Bot/)
 
 [![Use on Replit](https://repl.it/badge/github/Sobhan-SRZA/Discord-Music-Bot/)](https://repl.it/github/Sobhan-SRZA/Discord-Music-Bot/)
@@ -17,11 +18,8 @@
 
 آدرس [دیسکورد](https://discord.gg/q9NXmG62J9)
 
-## اگه خیلی به موضوعات فیلم و کارتون علاقه دارید پس چنل دومم رو فراموش نکنید👇🏼❤🌹
-
 آدرس [یوتوب](https://b2n.ir/srza._.action)
 
-آدرس [دیسکورد](https://discord.gg/pcYRw54xEP)
 
 ## آموزش نصب و ران کردن بات
 
@@ -63,6 +61,9 @@ PREFIX="Youre-bot-prefix"
 
 
 ## Language EN
+[![Deploy on Herokucd](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Sobhan-SRZA/Discord-Music-Bot/)
+
+[![Use on Replit](https://repl.it/badge/github/Sobhan-SRZA/Discord-Music-Bot/)](https://repl.it/github/Sobhan-SRZA/Discord-Music-Bot/)
 
 ## My addresses in cyberspace 👇🏼🙃📡
 
@@ -79,13 +80,7 @@ Address of the [Aparat](https://www.aparat.com/Sobhan.SRZA)
 
 [Discord](https://discord.gg/q9NXmG62J9)address
 
-
-## If you are very interested in movies and cartoons, then do not forget my second channel 👇🏼❤🌹📺
-
 [YouTube](https://b2n.ir/srza._.action) address
-
-[Discord](https://discord.gg/pcYRw54xEP) address
-
 
 
 
