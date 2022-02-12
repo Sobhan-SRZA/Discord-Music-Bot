@@ -16,7 +16,7 @@
 
 آدرس [یوتوب](https://b2n.ir/srza.-.gamer)
 
-آدرس [دیسکورد](https://discord.gg/q9NXmG62J9)
+آدرس [دیسکورد](https://discord.gg/bNpqrdXNNn)
 
 آدرس [یوتوب](https://b2n.ir/srza._.action)
 
@@ -78,7 +78,7 @@ Address of the [Aparat](https://www.aparat.com/Sobhan.SRZA)
 
 [YouTube](https://b2n.ir/srza.-.gamer) address
 
-[Discord](https://discord.gg/q9NXmG62J9)address
+[Discord](https://discord.gg/bNpqrdXNNn)address
 
 [YouTube](https://b2n.ir/srza._.action) address
 
