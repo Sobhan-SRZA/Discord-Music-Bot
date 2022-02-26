@@ -30,7 +30,6 @@ module.exports = {
         true
       );
     })
-      music.addField(`**Links**`, `**[Support Server](${"https://discord.gg/5GYNec4urW"}) • [Invite](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=137775017040&scope=bot)**`)
 
     const { MessageButton } = require('discord-buttons');
  let btn2 = new MessageButton()
@@ -41,8 +40,6 @@ module.exports = {
     .setStyle('url') 
     .setLabel('🦾Server Support') 
     .setURL(`https://discord.gg/5GYNec4urW`)
-     
     message.channel.send( { button: [btn,btn2],embed: music });
-    
     }
 }
