@@ -32,7 +32,17 @@ module.exports = {
     })
       music.addField(`**Links**`, `**[Support Server](${"https://discord.gg/5GYNec4urW"}) • [Invite](https://discord.com/oauth2/authorize?client_id=${message.client.user.id}&permissions=137775017040&scope=bot)**`)
 
-      message.channel.send(music)
+    const { MessageButton } = require('discord-buttons');
+ let btn2 = new MessageButton()
+    .setStyle('url') 
+    .setLabel('🤖Invite Bot') 
+    .setURL(`https://discord.com/api/oauth2/authorize?client_id=${message.client.user.id}&permissions=412353895745&scope=bot`)
+     let btn = new MessageButton()
+    .setStyle('url') 
+    .setLabel('🦾Server Support') 
+    .setURL(`https://discord.gg/5GYNec4urW`)
+     
+    message.channel.send( { button: [btn,btn2],embed: music });
     
     }
 }
