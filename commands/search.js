@@ -31,7 +31,7 @@ module.exports = {
           if (searched[0] == undefined)return sendError("Looks like i was unable to find the song on YouTube", message.channel);
                     let index = 0;
                     let embedPlay = new MessageEmbed()
-                        .setColor("BLUE")
+                        .setColor("RANDOM")
                         .setAuthor(`Results for \"${args.join(" ")}\"`, message.author.displayAvatarURL())
                         .setDescription(`${searched.map(video2 => `**\`${++index}\`  |** [\`${video2.title}\`](${video2.url}) - \`${video2.durationFormatted}\``).join("\n")}`)
                         .setFooter("Type the number of the song to add it to the playlist");
@@ -167,7 +167,6 @@ Created by Mr.SIN RE#1528 :)`)
 
     try {
       const connection = await channel.join();
-//      await queueConstruct.connection.voice.setSelfDeaf(true);
       queueConstruct.connection = connection;
       channel.guild.voice.setSelfDeaf(true)
       play(queueConstruct.songs[0]);
