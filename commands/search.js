@@ -167,7 +167,7 @@ Created by Mr.SIN RE#1528 :)`)
 
     try {
       const connection = await channel.join();
-      await queueConstruct.connection.voice.setSelfDeaf(true);
+//      await queueConstruct.connection.voice.setSelfDeaf(true);
       queueConstruct.connection = connection;
       channel.guild.voice.setSelfDeaf(true)
       play(queueConstruct.songs[0]);
