@@ -158,6 +158,7 @@ Created by Mr.SIN RE#1528 :)`)
 
     try {
       const connection = await channel.join();
+      await queueConstruct.connection.voice.setSelfDeaf(true);
       queueConstruct.connection = connection;
       play(queueConstruct.songs[0]);
     } catch (error) {
