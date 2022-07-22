@@ -119,3 +119,12 @@ Your bot is on and ready to go
 :D
 
 ❤
+
+---
+
+- **👌 Project**
+<p align="center">
+  <a href="https://github.com/Sobhan-SRZA/Chocolate-Boy/" target="_blank"> 
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Sobhan-SRZA&repo=Chocolate-Boy&theme=react" alt="Readme-Card.png">
+  </a>
+</p>
