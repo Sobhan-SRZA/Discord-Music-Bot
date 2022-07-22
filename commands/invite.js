@@ -23,7 +23,7 @@ const Discord = require('discord.js')
      let btn = new MessageButton()
     .setStyle('url') 
     .setLabel('🦾Server Support') 
-    .setURL(`https://discord.gg/5GYNec4urW`)
+    .setURL(`https://discord.com/invite/bNpqrdXNNn`)
     message.channel.send( { button: [btn,btn2],embed: inviteEmbed });
     }
 };

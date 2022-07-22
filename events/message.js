@@ -1,4 +1,22 @@
 module.exports = async (client, message) => {
+        if(message.channel.type === 'dm'){
+        if(!message.author.bot === message.user) return message.reply("You are Bot 🤖")
+        if(message.content.includes(`@everyone`)) return
+        if(message.author.id === client.user.id)return
+
+        if(message.content.includes('@'))return message.channel.send('you can\'t mention someone')
+const channelbug = client.channels.cache.get("988020418612961322");
+        const embed = new MessageEmbed()
+          .setColor("#2F3136")
+          .setAuthor(`${message.author.username}`,message.author.displayAvatarURL({ dynamic: true }))
+          .setTimestamp()
+          .setTitle(`This Guy Have Report, User ID "${message.author.id}"`)
+          .setDescription(`> ${message.content}`)
+        channelbug.send(embed).then((msg)=> {
+          msg.react("📞")
+         }).then(message.reply('Your bug request or comment has been sent to the support server, or the admins will join the server and solve it, or give you a friend request. Thanks❤'))
+
+    }
   if (message.author.bot) return;
 
   //Prefixes also have mention match
